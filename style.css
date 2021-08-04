@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+  width: 100vw;
+  height: 100vh;
+  flex: 1 1 100%;
+
+  /* flex-wrap: wrap; */
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  width: 300px;
+  height: 465px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+  width: 300px;
+  height: 465px;
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  width: 300px;
+  height: 465px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+img {
+  /* margin: 20px 30px; */
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 35px;
+  margin-top: 25px;
+  /* margin: 20px 30px; */
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-left: 35px;
+  margin-top: 25px;
+  margin-right: 45px;
+  margin-bottom: 25px;
+  /* margin: 20px 30px; */
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  margin-left: 35px;
+  margin-top: 55px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+  }
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
